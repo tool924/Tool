@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online tools for image and PDF processing - compression, conversion, editing and more">
-    <meta name="keywords" content="image tools, pdf tools, online converter, image compressor, pdf editor">
-    <title>ToolBox - Image & PDF Tools</title>
-    
+    <meta name="description" content="Explore free online tools for image and PDF processing - compress, convert, edit, and more">
+    <meta name="keywords" content="image tools, pdf tools, image compressor, pdf converter, online tools">
+    <title>ToolHub - Image & PDF Tools</title>
+
     <style>
         * {
             margin: 0;
@@ -15,25 +15,26 @@
         }
 
         body {
-            font-family: 'Poppins', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f0f2f5;
             color: #333;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
 
         /* Navigation */
         nav {
-            background: #1a2b3c;
+            background: #2d3436;
             padding: 15px 0;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         .nav-content {
@@ -43,108 +44,107 @@
         }
 
         .logo {
-            color: white;
-            font-size: 26px;
-            font-weight: 600;
+            color: #dfe6e9;
+            font-size: 24px;
+            font-weight: bold;
             text-decoration: none;
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 20px;
         }
 
         .nav-links a {
-            color: #ecf0f1;
+            color: #dfe6e9;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: #1abc9c;
+            color: #00b894;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(120deg, #1abc9c, #1a2b3c);
+            background: linear-gradient(135deg, #00b894, #2d3436);
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px 80px;
         }
 
         .hero h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 1.2em;
-            max-width: 700px;
+            max-width: 600px;
             margin: 0 auto 30px;
         }
 
         .cta-btn {
             display: inline-block;
-            background: #e67e22;
+            background: #ff6b6b;
             color: white;
-            padding: 14px 35px;
+            padding: 12px 30px;
             text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: all 0.3s;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .cta-btn:hover {
-            background: #d35400;
-            transform: scale(1.05);
+            background: #ee5253;
+            transform: translateY(-3px);
         }
 
         /* Tools Section */
         .tools-section {
-            padding: 70px 0;
+            padding: 60px 0;
         }
 
         .tools-section h2 {
             text-align: center;
-            margin-bottom: 50px;
-            color: #1a2b3c;
+            margin-bottom: 40px;
+            color: #2d3436;
             font-size: 2em;
         }
 
         .tools-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .tool-card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
         }
 
         .tool-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
 
         .tool-card h3 {
-            color: #1abc9c;
+            color: #00b894;
             margin-bottom: 15px;
-            font-size: 1.3em;
         }
 
         .tool-card p {
-            color: #777;
+            color: #636e72;
             margin-bottom: 20px;
         }
 
         .tool-card a {
-            color: #e67e22;
+            color: #ff6b6b;
             text-decoration: none;
             font-weight: 500;
         }
@@ -155,14 +155,14 @@
 
         /* Footer */
         footer {
-            background: #1a2b3c;
-            color: #ecf0f1;
-            padding: 40px 0;
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 30px 0;
             text-align: center;
         }
 
         footer a {
-            color: #1abc9c;
+            color: #00b894;
             text-decoration: none;
         }
 
@@ -174,21 +174,21 @@
         @media (max-width: 768px) {
             .nav-content {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
             }
 
             .nav-links {
                 flex-direction: column;
                 text-align: center;
-                gap: 15px;
+                gap: 10px;
             }
 
             .hero {
-                padding: 60px 20px;
+                padding: 80px 20px 60px;
             }
 
             .hero h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             .hero p {
@@ -205,7 +205,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container nav-content">
-            <a href="/" class="logo">ToolBox</a>
+            <a href="/" class="logo">ToolHub</a>
             <div class="nav-links">
                 <a href="#image-tools">Image Tools</a>
                 <a href="#pdf-tools">PDF Tools</a>
@@ -218,36 +218,36 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Master Your Files with ToolBox</h1>
-            <p>Discover powerful, free tools to compress, convert, and edit your images and PDFs effortlessly.</p>
-            <a href="#tools" class="cta-btn">Get Started</a>
+            <h1>ToolHub - Your File Processing Suite</h1>
+            <p>Unlock a collection of free, easy-to-use tools for all your image and PDF needs.</p>
+            <a href="#tools" class="cta-btn">Explore Tools</a>
         </div>
     </section>
 
     <!-- Tools Section -->
     <section class="tools-section" id="tools">
         <div class="container">
-            <h2>Featured Tools</h2>
+            <h2>Our Top Tools</h2>
             <div class="tools-grid">
                 <div class="tool-card">
                     <h3>Image Compressor</h3>
-                    <p>Reduce image sizes while maintaining quality for faster web loading.</p>
-                    <a href="tool/img-compress.html">Try Now</a>
+                    <p>Optimize images for web with custom compression levels.</p>
+                    <a href="img-compress.html">Use Tool</a>
                 </div>
                 <div class="tool-card">
-                    <h3>PDF Converter</h3>
-                    <p>Transform PDFs to other formats or convert files to PDF.</p>
-                    <a href="/pdf-converter">Try Now</a>
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDF documents to editable Word files.</p>
+                    <a href="/pdf-to-word">Use Tool</a>
                 </div>
                 <div class="tool-card">
-                    <h3>Image Resizer</h3>
-                    <p>Adjust image dimensions for any purpose with ease.</p>
-                    <a href="/image-resizer">Try Now</a>
+                    <h3>Image Converter</h3>
+                    <p>Change image formats (JPG, PNG, etc.) easily.</p>
+                    <a href="/image-converter">Use Tool</a>
                 </div>
                 <div class="tool-card">
-                    <h3>PDF Splitter</h3>
-                    <p>Split large PDFs into smaller, manageable files.</p>
-                    <a href="/pdf-splitter">Try Now</a>
+                    <h3>PDF Combiner</h3>
+                    <p>Merge multiple PDFs into a single document.</p>
+                    <a href="/pdf-combiner">Use Tool</a>
                 </div>
             </div>
         </div>
@@ -256,8 +256,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 ToolBox. All rights reserved.</p>
-            <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a> | <a href="#contact">Contact Us</a></p>
+            <p>© 2025 ToolHub. All rights reserved.</p>
+            <p><a href="#privacy">Privacy</a> | <a href="#terms">Terms</a> | <a href="#contact">Contact</a></p>
         </div>
     </footer>
 </body>
